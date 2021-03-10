@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Rodeos </title>
 
-	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="<?= base_url('css/tailwind.css') ?>" />
+	<link rel="stylesheet" href="<?= base_url('css/style.css') ?>" />
 </head>
 
-<body>
+<body id="rodeosLanding" class="xl:max-w-screen-md sm:max-w-full m-auto">
 
   <?= $this->renderSection('content') ?>
   

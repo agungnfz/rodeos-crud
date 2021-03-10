@@ -37,18 +37,24 @@ body:not(*:root) {
 
 
 .bannerTop {
-  background: rgb(159,199,242);
-  background:url("../../bg-top.png"), linear-gradient(0deg, rgba(159,199,242,1) 0%, rgba(255,255,255,1) 100%);
+  background:url('../../images/bg-head-min.png') no-repeat;
   background-size: cover;
-  background-position: left top;
+  background-position: center top;
   position: relative;
-  min-height: 32rem;
+  min-height: 24rem;
   
 }
 
+.beforeTiktok {
+  background:url('../../images/splash-min.png') repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative;
+
+}
+
 .bannerBottom {
-  background: rgb(255,255,255);
-  background: url("../../section-bg-testimoni.png"), linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(159,199,242,1) 100%);
+  background: url('../../images/bg-testimoni-min.png'), url('../../images/splash-min.png') ;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -57,51 +63,69 @@ body:not(*:root) {
 }
 
 .mainContentTop {
-  background: url("../../bg-manfaat.png"), url("../../bg-toko.png") #5469da;
+  background: url('../../images/manfaat-bg-min.png');
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center 30px!important;
+  background-size: cover;
+  background-position: center center;
   position: relative;
-
   height: 100%;
+  min-height: 50rem;
+}
+
+
+.mainContentTop::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url('../../images/splash-min.png') repeat;
+  left: 0;
+  background-size: contain;
+
 }
 
 .mainContentTop li {
-  background: #fff;
-  padding: 10px 0;
-  margin: 5px 0;
-  border-radius: 50px;
-  color: #5469da;
+  padding: 3px 0;
+  margin: 1px 0;
+  float: right!important;
   font-weight: 600;
 }
 
 .mainContentBottom {
-  background: rgb(255,255,255);
-  background: url("../../section-bg-testimoni.png"), linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(159,199,242,1) 100%);
+  background: url('../../images/bg-testimoni-min.png') ;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center;
   position: relative;
   min-height: 40rem;
   height: 100%;
+}
+
+.mainContentBottom::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url('../../images/splash-min.png') repeat;
+  left: 0;
+  background-size: contain;
 
 }
 
 .footerTop {
-  background: url("../../bg-manfaat.png"), #5469da;
+  background: url('../../images/legal-standing-bg-min.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 30px!important;
+  background-position: center top;
   position: relative;
-  min-height: 20rem;
+  min-height: 32rem;
   height: 100%;
 }
 
 .tokoOffline {
-  background: url("../../section-bg-testimoni.png");
+  background: url("../../images/splash2.png"), #5469da ;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   position: relative;
   height: 100%;
 

@@ -19,17 +19,34 @@ class Orders extends Migration
             'nama'               => [
                 'type'           => 'VARCHAR',
                 'constraint'     => 100,
-                'default'        => 'John Doe',
             ],
             'alamat'             => [
                 'type'           => 'VARCHAR',
                 'constraint'     => 1000,
-                'default'        => 'John Doe',
             ],
-            'telepon'          => [
+            'telepon'            => [
                 'type'           => 'VARCHAR',
                 'constraint'     => 16,
-                'default'       => '0811xxx'
+            ],
+            'varian'            => [
+                'type'           => 'VARCHAR',
+                'constraint'     => 100,
+            ],
+            'kota'            => [
+                'type'           => 'VARCHAR',
+                'constraint'     => 100,
+            ],
+            'kecamatan'            => [
+                'type'           => 'VARCHAR',
+                'constraint'     => 100,
+            ],
+            'pembayaran'            => [
+                'type'           => 'VARCHAR',
+                'constraint'     => 100,
+            ],
+            'provinsi'            => [
+                'type'           => 'VARCHAR',
+                'constraint'     => 100,
             ],
         ]);
 
