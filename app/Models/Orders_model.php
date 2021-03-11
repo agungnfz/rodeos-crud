@@ -10,5 +10,5 @@ class Orders_model extends Model
     protected $primaryKey = 'id';
 
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['nama', 'telepon', 'provinsi', 'kota', 'kecamatan', 'alamat', 'pembayaran'];
+    protected $allowedFields = ['nama', 'telepon', 'provinsi', 'kota', 'kecamatan', 'alamat', 'pembayaran', 'produk'];
 }
