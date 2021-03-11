@@ -35,6 +35,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/rodeos', 'Page::rodeos');
 $routes->get('/mainan', 'Page::mainan');
+$routes->get('/order', 'OrdersController::index');
+$routes->post('/order/save', 'OrdersController::create');
 
 /*
  * --------------------------------------------------------------------

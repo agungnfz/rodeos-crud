@@ -131,8 +131,8 @@ body:not(*:root) {
 
 }
 
-.promoTambahan {
-  background: url("../../bg-promo.png"), #5469da;
+.promoSpesial {
+  background: url("../../images/promo-spesial-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 30px!important;
@@ -141,9 +141,31 @@ body:not(*:root) {
   height: 100%;
 }
 
+.promoTambahan {
+  background: url("../../images/splash2.png"), #5469da ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  height: 100%;
+}
+
+.orderProduct {
+  min-height: 70rem;
+}
+
+.beforeBottom {
+  background: url("../../images/splash2.png"), #5469da ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  height: 100%;
+}
+
 .footerBottom {
   background: rgb(159,199,242);
-  background:url("../../bg-toko.png"), linear-gradient(0deg, rgba(159,199,242,1) 0%, rgba(255,255,255,1) 100%);
+  background:url("../../images/bg-bottom-min.png"), linear-gradient(0deg, rgba(159,199,242,1) 0%, rgba(255,255,255,1) 100%);
   background-size: cover;
   background-position:  top;
   position: relative;

@@ -6,7 +6,7 @@
     <div class="text-center w-full xl:py-10 sm:py-5 ">
         <div class="xl:mb-10 sm:mb-3 justify-center w-full content-center">
             <div class="w-full">
-                <img class="xl:h-24 sm:h-12 mx-auto sm:mb-5" src="<?= base_url('images/logo-min.png') ?>" alt="">
+                <img class="xl:h-24 sm:h-16 mx-auto sm:mb-5" src="<?= base_url('images/logo-min.png') ?>" alt="">
             </div>
             <div class="self-center xl:mx-10 ">
                 <div class="xl:text-3xl sm:text-xl font-bold text-center">
@@ -18,8 +18,8 @@
             </div>
         </div>
         <div class="xl:flex justify-center w-full content-center">
-            <div class="xl:w-1/2 sm:w-full relative">
-                <img class="xl:w-auto sm:w-auto mx-auto" src="<?= base_url('images/img-rodeos-min.png') ?>" alt="">
+            <div class="xl:w-1/2 sm:w-full relative ">
+                <img class="xl:w-auto sm:w-auto mx-auto relative" src="<?= base_url('images/img-rodeos-min.png') ?>" alt="">
                 <img class="xl:w-64 sm:w-64 mx-auto absolute bottom-0 left-0 sm:ml-32 " src="<?= base_url('images/10xefektif-min.png') ?>" alt="">
             </div>
         </div>
@@ -198,7 +198,7 @@
                 sehingga <span class="font-semibold text-gray-800">RODEOS</span> aman digunakan dan cocok untuk semua
                 jenis kulit, bahkan untuk kulit sensitive sekalipun.
             </p>
-            <p class="absolute">
+            <p class="relative">
                 <img src="<?= base_url('images/registrasi-min.png') ?>" alt="">
             </p>
         </div>
@@ -217,35 +217,163 @@
     </div>
 </section>
 
+<section class="promoSpesial">
+    <div class="text-center sm:mx-5 sm:py-10">
+        <div class="w-full">
+            <div class="text-3xl uppercase font-semibold mb-1 text-red-500 italic">Promo Spesial</div>
+            <div class="uppercase text-gray-800">Khusus Pengguna TIktok</div>
+
+            <div class="uppercase text-red-500 text-2xl "><s>Rp 149,000</s></div>
+            <div class="uppercase text-gray-800 py-3 ">kini hanya</div>
+            <div class="uppercase text-green-500 text-3xl ">Rp 90,000</div>
+            <div class="text-gray-800 uppercase text-lg mt-5">ambil promonya sekarang <br>bisa cod/bayar ditempat</div>
+        </div>
+    </div>
+</section>
+
 <section class="promoTambahan">
     <div class="text-center sm:mx-5 sm:py-10">
         <div class="w-full">
             <div class="text-3xl uppercase font-semibold mb-1 text-white">Promo tambahan</div>
-            <div class="uppercase text-yellow-500 font-semibold">Gunakan kode promo dibawah ini</div>
+            <div class="uppercase text-white font-semibold">Gunakan kode promo dibawah ini</div>
             <div class="sm:py-3">
-                <div style="border: 2px solid white;"
-                     class="content-center py-5 text-white text-3xl font-semibold rounded-full text-yellow-500">
+                <div style="border: 2px solid white;" class="content-center py-3 text-white text-4xl font-semibold rounded-full text-yellow-500">
                     RODEOSTIKTOK
                 </div>
             </div>
             <div class="text-white">Silahkan isi Form dibawah ini dengan lengkap kemuadian isi kode Promo dan klik
                 Apply
             </div>
-            <div class="py-10">
-                <a class="py-5 text-xl  px-5 bg-orange-500 hover:bg-blue-500 rounded-md text-white font-semibold">ambil
-                    promo sekarang</a>
-            </div>
         </div>
 
     </div>
 </section>
 
-<section class="footerBottom">
-    <div class="text-left sm:mx-5 sm:pb-10">
+<section class="orderProduct sm:p-10">
+    <form method="post" action="<?php echo base_url(); ?>/order/save">
+        <div class="py-5 text-lg font-semibold">
+            Varian :
+        </div>
+
+        <div class="xl:flex xl:flex-wrap sm:block">
+            <div class="py-3 px-2 mb-3 border rounded-md border-gray-300">
+                <input type="radio" id="contactChoice1"
+                       name="contact" value="email">
+                <label for="contactChoice1">product 1</label>
+            </div>
+            <div class="py-3 px-2 mb-3 border rounded-md border-gray-300">
+                <input type="radio" id="contactChoice2"
+                       name="contact" value="email">
+                <label for="contactChoice1">product 2</label>
+            </div>
+            <div class="py-3 px-2 mb-3 border rounded-md border-gray-300">
+                <input type="radio" id="contactChoice3"
+                       name="contact" value="email">
+                <label for="contactChoice1">product 3</label>
+            </div>
+            <div class="py-3 px-2 mb-3 border rounded-md border-gray-300">
+                <input type="radio" id="contactChoice4"
+                       name="contact" value="email">
+                <label for="contactChoice1">product 4</label>
+            </div>
+        </div>
+
+        <div class="font-semibold my-5 text-lg">Data penerima</div>
+
+        <div class=" py-2">
+            <label for="nama">Nama</label>
+            <input type="text" class="px-2 border block w-full sm:text-md border-gray-300 rounded-sm py-2" id="nama" name="nama">
+        </div>
+
+        <div class=" py-2">
+            <label for="telepon">Nomor Telepon</label>
+            <input type="text" class="px-2 border block w-full sm:text-md border-gray-300 rounded-sm py-2" id="telepon" name="telepon">
+        </div>
+
+        <div class=" py-2">
+            <label for="provinsi">Provinsi</label>
+            <input type="text" class="px-2 border block w-full sm:text-md border-gray-300 rounded-sm py-2" id="provinsi" name="provinsi">
+        </div>
+
+        <div class=" py-2">
+            <label for="kota">Kota</label>
+            <input type="text" class="px-2 border block w-full sm:text-md border-gray-300 rounded-sm py-2" id="kota" name="kota">
+        </div>
+
+        <div class=" py-2">
+            <label for="kecamatan">Kecamatan</label>
+            <input type="text" class="px-2 border block w-full sm:text-md border-gray-300 rounded-sm py-2" id="kecamatan" name="kecamatan">
+        </div>
+
+        <div class="py-2">
+            <label for="alamat">Alamat</label>
+            <textarea rows="4" cols="50" class="px-2 border block w-full sm:text-md border-gray-300 rounded-sm py-2" name="alamat" id="alamat"></textarea>
+        </div>
+
+        <div class="font-semibold my-5 text-lg">Metode Pembayaran</div>
+
+<!--        <div class="xl:flex xl:flex-wrap sm:block">-->
+<!--            <div class="py-3 px-2 mb-3 border rounded-md border-gray-300">-->
+<!--                <input type="radio" id="transfer"-->
+<!--                       name="contact" value="email">-->
+<!--                <label for="pembayaran">Transfer manual</label>-->
+<!--            </div>-->
+<!--            <div class="py-3 px-2 mb-3 border rounded-md border-gray-300">-->
+<!--                <input type="radio" id="transfer"-->
+<!--                       name="contact" value="email">-->
+<!--                <label for="pembayaran">COD</label>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <button type="submit" class="py-2 px-2 bg-red-500 rounded-md w-full text-white text-lg">Pesan Sekarang</button>
+    </form>
+
+    <div class="py-5 ">
+        <ul>
+<!--            <li>Product : </li>-->
+<!--            <li>Vaarian : </li>-->
+            <?php if(isset($nama)) : ?>
+                <li class="py-2 text-lg ">Nama: <?= $nama ?></li>
+            <?php endif;?>
+            <?php if(isset($telepon)) : ?>
+                <li class="py-2 text-lg ">Nomor Telepon: <?= $telepon ?></li>
+            <?php endif;?>
+            <?php if(isset($provinsi)) : ?>
+                <li class="py-2 text-lg ">Provinsi: <?= $provinsi ?></li>
+            <?php endif;?>
+            <?php if(isset($kota)) : ?>
+                <li class="py-2 text-lg ">Kota: <?= $kota ?></li>
+            <?php endif;?>
+            <?php if(isset($kecamatan)) : ?>
+                <li class="py-2 text-lg ">Kecamatan: <?= $kecamatan ?></li>
+            <?php endif;?>
+            <?php if(isset($alamat)) : ?>
+                <li class="py-2 text-lg ">Alamat: <?= $alamat ?></li>
+            <?php endif;?>
+        </ul>
+    </div>
+</section>
+
+<section class="beforeBottom relative sm:mb-10 mt-10">
+    <div class="text-left sm:py-5">
+        <div>
+            <img class="absolute right-0 w-32 bottom-0" src="<?= base_url('images/soap-bg-min.png') ?>" alt="">
+        </div>
+        <div>
+            <div style="font-size: 18px" class="text-lg ml-5 uppercase text-white">garansi pengiriman ulang</div>
+            <div class="text-lg ml-5 uppercase text-white">jika paket tidak sampai</div>
+            <div class="text-3xl  font-bold ml-5 mt-5  text-yellow-500">1500 Pcs</div>
+            <div class="text-lg ml-5 -mt-2 text-white">Terjual setiap harinya</div>
+        </div>
+    </div>
+</section>
+
+<section class="footerBottom py-10">
+    <div class="text-center sm:mx-5 sm:pb-10">
         <div class="">
-            <div class="text-center py-10 text-2xl text-blue-800">Alamat kantor dan pengiriman</div>
-            <div class="mb-10">
-                <img class="xl:h-24 sm:h-20 " src="src/img/logo@2x.png" alt="">
+            <div class="text-center mb-10 text-2xl text-gray-800">Alamat kantor dan pengiriman</div>
+            <div class="mb-5">
+                <img class="xl:h-24 m-auto sm:h-20 " src="<?= base_url('images/logo-min.png') ?>" alt="">
             </div>
             <div class="text-xl font-semibold mb-2">RODEOS OFFICIAL STORE</div>
             <div>Jalan KH. Ahmad Sanusi No. 15 <br> Kp. Cisereuh RT. 01 RW. 01 <br>Kel. Karangtengah Kec. Gunung Puyuh

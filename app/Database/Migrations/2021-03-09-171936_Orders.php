@@ -8,7 +8,6 @@ class Orders extends Migration
 {
 	public function up()
 	{
-        // Membuat kolom/field untuk tabel news
         $this->forge->addField([
             'id'                 => [
                 'type'           => 'INT',
@@ -45,6 +44,10 @@ class Orders extends Migration
                 'constraint'     => 100,
             ],
             'provinsi'            => [
+                'type'           => 'VARCHAR',
+                'constraint'     => 100,
+            ],
+            'produk'            => [
                 'type'           => 'VARCHAR',
                 'constraint'     => 100,
             ],
